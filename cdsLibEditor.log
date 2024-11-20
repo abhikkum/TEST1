@@ -1,0 +1,36 @@
+\o Program:		@(#)$CDS: cdsLibEditor version 6.1.6 - CAT33 07/09/2015 16:04 (sjfnl890) $
+\o Sub version:		sub-version  s018 
+\o Arguments:		-display :0 -mpssession virtuoso684 -mpshost antares.seas.upenn.edu -namespace CDBA -cdslib /mnt/pollux/software/ic-design/design_kits/gpdk045_v_6_0/cds.lib 
+\o Working Directory:	antares.seas.upenn.edu:/mnt/castor/seas_home/k/kwlaial/cadenceGPDK/TEST1
+\a nrSetWindowVisibility(cdsLibEditor "show")
+\o Qt version: 		4.7.2
+\o WARNING (CLE-120): The file "/mnt/pollux/software/ic-design/design_kits/gpdk045_v_6_0/cds.lib" is read only. 
+\a nrSetWindowVisibility(errorDialog "show")
+\a nrSetCurrentWindow(cdsLibEditor)
+\a nrListItemAction(cdsLibEditor->mainTable 0 0)
+\o Active cell: 0 0 "analogLib"
+\a nrSetCurrentWindow(errorDialog)
+\a nrResizeWindow(cdsLibEditor list(150 182 500 400))
+\a nrResizeWindow(errorDialog list(115 275 571 120))
+\a errorDialog->errorOkButton->value = t
+\a nrSetCurrentWindow(cdsLibEditor)
+\a cdsLibEditor->editAddLibButton->value = t
+\a newLibraryDialog->filePathComboBox->value = "/mnt/castor/seas_home/k/kwlaial/cadenceGPDK/TEST1"
+\a newLibraryDialog->filePathComboBox->value = "/mnt/pollux/software/ic-design/design_kits/gpdk045_v_6_0"
+\a newLibraryDialog->useMappedName->value = nil
+\a nrSetWindowVisibility(newLibraryDialog "show")
+\a nrSetCurrentWindow(newLibraryDialog)
+\a nrResizeWindow(newLibraryDialog list(135 145 531 513))
+\a newLibraryDialog->filePathComboBox->value = "/mnt/castor/seas_home/k/kwlaial/cadenceGPDK/TEST1"
+\a newLibraryDialog->dirListWidget->value = "Test"
+\a newLibraryDialog->filePathComboBox->value = "/mnt/castor/seas_home/k/kwlaial/cadenceGPDK/TEST1/Test"
+\a newLibraryDialog->applyButton->value = t
+\o ERROR (CLE-214): Provide a library name. 
+\a nrSetWindowVisibility(errorDialog "show")
+\a nrSetCurrentWindow(errorDialog)
+\a nrResizeWindow(errorDialog list(115 275 571 120))
+\a nrSetCurrentWindow(newLibraryDialog)
+\a nrSetCurrentWindow(cdsLibEditor)
+\a cdsLibEditor->fileExitButton->value = t
+\a nrSetWindowVisibility(cdsLibEditor "hide")
+\a exit(0)
